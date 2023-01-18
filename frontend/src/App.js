@@ -4,6 +4,7 @@ import ForgotPassword from './Components/auth/Forgot password/ForgotPassword';
 import Login from './Components/auth/Login/Login';
 import Register from './Components/auth/Register/Register';
 import ResetPassword from './Components/auth/ResetPassword/ResetPassword';
+import Contact from './Components/Contact/Contact';
 import Courses from './Components/Courses/Courses';
 import Home from './Components/Home/Home';
 import Footer from './Components/layout/Footer/Footer';
@@ -21,6 +22,7 @@ function App() {
         <Route path='/register' element={<Register/>} />
         <Route path='/forgotPassword' element={<ForgotPassword/>}/>
         <Route path='/resetPassword/:token' element={<ResetPassword/>} />
+        <Route path='/contact' element={<Contact/>} />
       </Routes>
       <Footer/>
     </Router>
