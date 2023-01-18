@@ -9,6 +9,7 @@ import Courses from './Components/Courses/Courses';
 import Home from './Components/Home/Home';
 import Footer from './Components/layout/Footer/Footer';
 import Header from './Components/layout/Header/Header';
+import Request from './Components/Request/Request';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/forgotPassword' element={<ForgotPassword/>}/>
         <Route path='/resetPassword/:token' element={<ResetPassword/>} />
         <Route path='/contact' element={<Contact/>} />
+        <Route path='/request' element={<Request/>} />
       </Routes>
       <Footer/>
     </Router>
