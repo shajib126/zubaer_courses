@@ -12,6 +12,16 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+export const fileUploadCss = {
+  cursor:'pointer',
+  marginLeft:"-5%",
+  width:"110%",
+  border:"none",
+  height:"100%",
+  color:"#ECC94B",
+  backgroundColor:"white"
+}
+
 const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

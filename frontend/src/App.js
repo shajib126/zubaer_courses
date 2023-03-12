@@ -6,6 +6,7 @@ import Login from './Components/auth/Login/Login';
 import Register from './Components/auth/Register/Register';
 import ResetPassword from './Components/auth/ResetPassword/ResetPassword';
 import Contact from './Components/Contact/Contact';
+import CoursePage from './Components/CoursePage/CoursePage';
 import Courses from './Components/Courses/Courses';
 import Home from './Components/Home/Home';
 import Footer from './Components/layout/Footer/Footer';
@@ -13,6 +14,7 @@ import Header from './Components/layout/Header/Header';
 import { NotFound } from './Components/NotFound/NotFound';
 import { PaymentFail } from './Components/Payment/PaymentFail';
 import PaymentSuccess from './Components/Payment/PaymentSuccess';
+import Profile from './Components/Profile/Profile';
 import Request from './Components/Request/Request';
 import Subscribe from './Components/Subscribe/Subscribe';
 
@@ -24,8 +26,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/courses' element={<Courses/>} />
+        <Route path='/course/:id' element={<CoursePage/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
+        <Route path='/profile' element={<Profile/>} />
         <Route path='/forgotPassword' element={<ForgotPassword/>}/>
         <Route path='/resetPassword/:token' element={<ResetPassword/>} />
         <Route path='/contact' element={<Contact/>} />
